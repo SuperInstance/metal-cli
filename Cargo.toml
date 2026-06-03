@@ -1,0 +1,20 @@
+[package]
+name = "metal-cli"
+version = "0.1.0"
+edition = "2021"
+description = "Unified CLI for all 12 SuperInstance metal library crates"
+
+[dependencies]
+sheaf-agents = { git = "https://github.com/SuperInstance/sheaf-agents-rs" }
+hodge-belief = { git = "https://github.com/SuperInstance/hodge-belief-rs" }
+spectral-graph-agent = { git = "https://github.com/SuperInstance/spectral-graph-agent-rs" }
+ergodic-transport = { git = "https://github.com/SuperInstance/ergodic-transport-rs" }
+evolving-sheaf = { git = "https://github.com/SuperInstance/evolving-sheaf-rs" }
+renormalization-learning = { git = "https://github.com/SuperInstance/renormalization-learning-rs" }
+free-probability = { git = "https://github.com/SuperInstance/free-probability-rs" }
+# conservation-spectral-topology — 404 at runtime, stub for now
+# conservation-spectral-topology = { git = "https://github.com/SuperInstance/conservation-spectral-topology-rs" }
+nalgebra = "0.33"
+clap = { version = "4", features = ["derive"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
